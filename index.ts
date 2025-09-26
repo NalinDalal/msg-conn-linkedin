@@ -4,7 +4,7 @@ const LINKEDIN_EMAIL = process.env.LINKEDIN_EMAIL!;
 const LINKEDIN_PASSWORD = process.env.LINKEDIN_PASSWORD!;
 
 async function main() {
-  const browser = await chromium.launch({ headless: false }); // visible browser
+  const browser = await chromium.launch({ headless: true }); // headless mode for server environments
   const context = await browser.newContext();
   const page = await context.newPage();
 

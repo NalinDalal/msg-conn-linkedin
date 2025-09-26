@@ -42,3 +42,6 @@ The basic flow would be:
 - Logs into LinkedIn,
 - Opens your connections list,
 - Iterates and **prints names** (no messaging yet)
+
+msg:
+> Hi [Name], I hope you’re doing well! I’m currently exploring new opportunities in software engineering and wanted to reach out. If you’re aware of any openings at your company, or could point me in the right direction, I’d really appreciate it. Happy to share my github.com/nalindalal . Thanks a lot in advance!
