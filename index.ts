@@ -33,6 +33,12 @@ async function main() {
     els.map((e) => e.textContent?.trim()).filter(Boolean),
   );
 
+  // Save connections to a file
+  const fs = await import('fs/promises');
+  await fs.writeFile('connections.json', JSON.stringify(names, null, 2));
+  console.log(`Saved ${names.length} connections to connections.json`);
+
+  // Log connections to console as well
   console.log("Connections:");
   names.forEach((name, i) => console.log(`${i + 1}. ${name}`));
 
